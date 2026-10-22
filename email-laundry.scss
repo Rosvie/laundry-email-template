@@ -1,0 +1,166 @@
+$tide: #0f3057;
+$aqua: #12b5cb;
+$sunny: #ffc83d;
+$coral: #ff6f61;
+$mint: #2fd1a0;
+$foam: #eef9fc;
+$font: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+$cards: (
+  wash: $aqua,
+  dry: $coral,
+  delivery: $mint
+);
+
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+body {
+  margin: 0;
+  background: $foam;
+  font-family: $font;
+  color: $tide;
+}
+
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.pad {
+  padding: 28px;
+  text-align: center;
+
+  @include mobile {
+    padding: 20px;
+  }
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.header {
+  background: $tide;
+  color: #fff;
+  padding: 16px 28px;
+  font-size: 22px;
+  font-weight: bold;
+
+  span {
+    color: $sunny;
+  }
+}
+
+.hero {
+  background: $aqua;
+  color: #fff;
+  text-align: center;
+  padding: 40px 24px;
+
+  h1 {
+    margin: 0 0 12px;
+    font-size: 36px;
+
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    margin: 0 0 24px;
+    font-size: 17px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: $sunny;
+  color: $tide;
+  font-weight: bold;
+  text-decoration: none;
+
+  &.coral {
+    background: $coral;
+    color: #fff;
+  }
+}
+
+.col {
+  width: 33%;
+  padding: 6px;
+  vertical-align: top;
+
+  @include mobile {
+    display: block;
+    width: auto;
+  }
+}
+
+.card {
+  background: $foam;
+  border-top: 6px solid;
+  border-radius: 14px;
+  padding: 18px 12px;
+  font-size: 14px;
+
+  h3 {
+    margin: 8px 0 4px;
+    font-size: 17px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @each $name, $color in $cards {
+    &.#{$name} {
+      border-color: $color;
+
+      strong {
+        color: $color;
+      }
+    }
+  }
+}
+
+.tag {
+  background: $sunny;
+  border: 3px dashed $tide;
+  border-radius: 18px;
+  padding: 22px;
+  max-width: 380px;
+  margin: 0 auto;
+
+  b {
+    display: block;
+    font-size: 40px;
+  }
+
+  code {
+    background: #fff;
+    color: $coral;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+}
+
+.footer {
+  background: $tide;
+  color: #cfe0ee;
+  padding: 22px;
+  text-align: center;
+  font-size: 12px;
+
+  a {
+    color: $sunny;
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bubbly Basket Laundry</title>
+  <style>
+    body {
+      margin: 0;
+      background: #eef9fc;
+      font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+      color: #0f3057;
+    }
+
+    .wrap {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    .pad {
+      padding: 28px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .pad {
+        padding: 20px;
+      }
+    }
+
+    h2 {
+      margin: 0 0 20px;
+      font-size: 24px;
+    }
+
+    .header {
+      background: #0f3057;
+      color: #fff;
+      padding: 16px 28px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .header span {
+      color: #ffc83d;
+    }
+
+    .hero {
+      background: #12b5cb;
+      color: #fff;
+      text-align: center;
+      padding: 40px 24px;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 36px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+    }
+
+    .hero p {
+      margin: 0 0 24px;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 999px;
+      background: #ffc83d;
+      color: #0f3057;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn.coral {
+      background: #ff6f61;
+      color: #fff;
+    }
+
+    .col {
+      width: 33%;
+      padding: 6px;
+      vertical-align: top;
+    }
+
+    @media (max-width: 600px) {
+      .col {
+        display: block;
+        width: auto;
+      }
+    }
+
+    .card {
+      background: #eef9fc;
+      border-top: 6px solid;
+      border-radius: 14px;
+      padding: 18px 12px;
+      font-size: 14px;
+    }
+
+    .card h3 {
+      margin: 8px 0 4px;
+      font-size: 17px;
+    }
+
+    .card p {
+      margin: 0;
+    }
+
+    .card.wash {
+      border-color: #12b5cb;
+    }
+
+    .card.wash strong {
+      color: #12b5cb;
+    }
+
+    .card.dry {
+      border-color: #ff6f61;
+    }
+
+    .card.dry strong {
+      color: #ff6f61;
+    }
+
+    .card.delivery {
+      border-color: #2fd1a0;
+    }
+
+    .card.delivery strong {
+      color: #2fd1a0;
+    }
+
+    .tag {
+      background: #ffc83d;
+      border: 3px dashed #0f3057;
+      border-radius: 18px;
+      padding: 22px;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .tag b {
+      display: block;
+      font-size: 40px;
+    }
+
+    .tag code {
+      background: #fff;
+      color: #ff6f61;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+
+    .footer {
+      background: #0f3057;
+      color: #cfe0ee;
+      padding: 22px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .footer a {
+      color: #ffc83d;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="header">Bubbly Basket<span>.</span></div>
+
+    <div class="hero">
+      <h1>Fresh clothes.<br>Zero laundry day.</h1>
+      <p>We pick up, wash, fold and deliver, usually within 24 hours.</p>
+      <a class="btn" href="#">Book a pickup</a>
+    </div>
+
+    <div class="pad">
+      <h2>What we do</h2>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="col">
+            <div class="card wash">
+              <div>🧺</div>
+              <h3>Wash &amp; Fold</h3>
+              <p>Sorted, washed, folded.</p><strong>₱70 / kg</strong>
+            </div>
+          </td>
+          <td class="col">
+            <div class="card dry">
+              <div>👔</div>
+              <h3>Dry Cleaning</h3>
+              <p>Suits and delicates.</p><strong>₱150 / piece</strong>
+            </div>
+          </td>
+          <td class="col">
+            <div class="card delivery">
+              <div>🛵</div>
+              <h3>Delivery</h3>
+              <p>At your door, on time.</p><strong>Free over ₱500</strong>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="pad" style="padding-top:0">
+      <div class="tag">
+        New customers
+        <b>20% OFF</b>
+        <p>Your first pickup. Use code:</p>
+        <code>FRESH20</code>
+      </div>
+    </div>
+
+    <div class="pad" style="padding-top:0">
+      <a class="btn coral" href="#">Schedule my pickup</a>
+    </div>
+
+    <div class="footer">
+      Bubbly Basket Laundry · Cebu City, Philippines<br>
+      <a href="#">Unsubscribe</a>
+    </div>
+
+  </div>
+</body>
+
+</html>
